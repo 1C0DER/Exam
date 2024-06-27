@@ -13,7 +13,11 @@ body {
     font-family: poppins;
 }
 
-
+.section1 {
+    background-image: url(/Pics/unsplash_dXYE1d08BiY.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .flower-container {
     max-width: 1519px;
@@ -162,9 +166,11 @@ body {
 
 .back-images {
     width: 100%;
+    max-width: 1519px;
     height: 491px;
-    top: 75px;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     display: flex;
 }
 
@@ -300,7 +306,8 @@ body {
 
 .branch {
     position: absolute;
-    margin-top: -90px;
+    right: 0;
+    bottom: 0;
 }
 
 .flower {
@@ -308,6 +315,10 @@ body {
     left: 0;
     margin-top: 500px;
     opacity: 15%;
+}
+
+.cherry {
+    left: 0;
 }
 
 .mid-container {
@@ -319,7 +330,6 @@ body {
     margin-left: auto;
     padding-top: 163px;
     position: relative;
-    background-color: aqua;
 }
 
 .toptext {
@@ -332,7 +342,6 @@ body {
 
 .mid-content {
     width: 100%;
-    background-color: chartreuse;
 }
 
 .midcontainer-backimg {
@@ -365,41 +374,42 @@ body {
     flex-direction: column;
     gap: 202px;
     margin-top: 68px;
-    background-color: blueviolet;
 }
 
 .container-col1 {
     width: 100%;
     gap: 161px;
     display: flex;
-    background-color: chocolate;
 }
 
 .mainmid-content img {
     width: 100%;
 }
 
-.mainmid-text {
-    flex: 1;
-}
-
 .mainmid-img {
     flex: 1;
 }
 
-.mainmid-content h1 { 
+.mainmid-text {
+    flex: 1;
+}
+
+.mainmid-text p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.mainmid-text h1 {  
     font-weight: 600;
     font-size: 20px;
     line-height: 29px;
 }
 
-.mainmid-content p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 29px;
-}
-
-.mainmid-content a {
+.mainmid-text a{
+    margin-top: 27px;
     width: 80px;
     font-weight: 600;
     font-size: 16px;
@@ -420,9 +430,8 @@ body {
     padding-bottom: 200px;
 }
 
-.branch {
-    margin-top: -1030px;
-    right: 0;
+.section4 {
+    background-color: rgba(202, 242, 219, 1);
 }
 
 .footer-container {
@@ -438,7 +447,6 @@ body {
 
 .footer-content {
     width: 100%;
-    background-color: rgb(140, 199, 241);
 }
 
 .headtext{
@@ -475,7 +483,6 @@ body {
     flex-wrap: wrap;
     gap: 255px;
     margin-top: 34px;
-    background-color: violet;
 }
 
 .foottext ul,a{
