@@ -1,15 +1,19 @@
 *{
     margin: 0;
-    box-sizing: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 body {
     padding: 0;
+    width: 100%;
     margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: poppins;
 }
+
+
 
 .flower-container {
     max-width: 1519px;
@@ -79,12 +83,12 @@ body {
     line-height: 16px;   
     padding-top: 8px;
     padding-bottom: 8px;
+    text-wrap: nowrap;
     color: white;
 }
 
 .topSignUp-button {
-    width: 55px;
-    height: 16px;
+    width: 80px;
     background-color: rgba(236, 245, 242, 0.4); /* Green */
     border: none;
     text-align: center;
@@ -130,7 +134,7 @@ body {
 }
 
 .knowMore-hero {
-    width: 93px;
+    width: 100px;
     height: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -151,9 +155,9 @@ body {
     max-width: 1519px;
     width: 100%;
     height: 595px;
+    margin-top: 66px;
     margin-left: auto;
     margin-right: auto;
-    background-repeat: no-repeat;
 }
 
 .back-images {
@@ -204,7 +208,6 @@ body {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -425px;
 }
 
 .text-container {
@@ -241,7 +244,7 @@ body {
 }
 
 .img-container img {
-    padding-right: 175px;
+    padding-right: 160px;
 }
 
 .imgno3 img{
@@ -308,34 +311,28 @@ body {
 }
 
 .mid-container {
-    max-width: 1519px;
+    max-width: 1419px;
     width: 100%;
-    height: 1949px;
-    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px; 
     margin-right: auto;   
+    margin-left: auto;
     padding-top: 163px;
     position: relative;
-}
-
-.mid-content {
-    max-width: 1280px;
-    height: 1749px;
-    margin: 0;
-    margin-left: 60px;
-    margin-right: 100px; 
-    position: relative;
+    background-color: aqua;
 }
 
 .toptext {
-    width: 280px;
-    height: 36px;
-    border-bottom: 3px solid black;
-}
-
-.toptext h1{
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.mid-content {
+    width: 100%;
+    background-color: chartreuse;
 }
 
 .midcontainer-backimg {
@@ -363,41 +360,47 @@ body {
 }
 
 .mainmid-content {
-    position: absolute;
-    top: 0;
-    height: 1525px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 202px;
     margin-top: 68px;
+    background-color: blueviolet;
+}
+
+.container-col1 {
+    width: 100%;
+    gap: 161px;
+    display: flex;
+    background-color: chocolate;
 }
 
 .mainmid-content img {
     width: 100%;
-    height: 372px;
 }
 
-.mainmid-content h1 {
-    width: 100%;
-    height: 29px;
+.mainmid-text {
+    flex: 1;
+}
+
+.mainmid-img {
+    flex: 1;
+}
+
+.mainmid-content h1 { 
     font-weight: 600;
     font-size: 20px;
     line-height: 29px;
 }
 
 .mainmid-content p {
-    width: 100%;
-    height: 290px;
     font-weight: 400;
     font-size: 14px;
     line-height: 29px;
-    text-align: justify;
-    margin-top: 17px;
 }
 
 .mainmid-content a {
-    width: 79px;
-    height: 29px;
+    width: 80px;
     font-weight: 600;
     font-size: 16px;
     line-height: 29px;
@@ -405,28 +408,16 @@ body {
     border-bottom: 2px solid black;
 }
 
-.mainmid-text1,.mainmid-text3,.mainmid-img2 {
-    height: 372px;
-    margin-left: auto;
-}
-
-.mainmid-text1 p {
-    margin-top: 17px;
-}
-
 .bottom-text {
-    position: absolute;
-    width: 240px;
-    height: 29px;
-    margin-top: -50px;
-    margin-left: 35%;
-}
-
-.bottom-text a{
+    color: rgba(91, 191, 115, 1);
     font-weight: 600;
     font-size: 20px;
     line-height: 29px;
-    color: black;
+    padding-left: 40%;
+    padding-right: 50%;
+    text-wrap: nowrap;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .branch {
@@ -435,24 +426,22 @@ body {
 }
 
 .footer-container {
-    max-width: 1519px;
+    max-width: 1419px;
     width: 100%;
-    height: 444px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px; 
     padding-top: 81px;
-    position: relative;
     background-color: rgba(202, 242, 219, 1);
 }
 
-.headtext {
-    width: 150px;
-    height: 16px;
-    margin-top: 81px;
-    margin-left: 80px;
+.footer-content {
+    width: 100%;
+    background-color: rgb(140, 199, 241);
 }
 
-.headtext h1 {
+.headtext{
     font-weight: 400;
     font-style: italic;
     font-size: 35px;
@@ -466,6 +455,7 @@ body {
     height: 116px;
     margin-top: 68px;
     display: flex;
+    flex-wrap: wrap;
     gap: 77px;
     opacity: 10%;
 }
@@ -480,11 +470,12 @@ body {
 
 .foottext {
     position: relative;
-    margin-top: -166px;
     width: 100%;
-    height: 181px;
     display: flex;
-    gap: 260px;
+    flex-wrap: wrap;
+    gap: 255px;
+    margin-top: 34px;
+    background-color: violet;
 }
 
 .foottext ul,a{
@@ -506,10 +497,6 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
     color: rgba(46, 171, 74, 0.78);
-}
-
-.foot1 {
-    padding-left: 90px;
 }
 
 .foot4 p{
