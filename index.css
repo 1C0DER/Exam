@@ -101,14 +101,13 @@ body {
     border-radius: 28px;
 }
 
-.hamburger {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
 .hero-text {
     width: 100%;
     margin-top: 198px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .hero-container {
@@ -151,15 +150,81 @@ body {
     text-align: center;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 @media screen and (max-width: 640px) {
-    .left-nav {
+    .nav-bar {
+        position: relative;
+        z-index: 100;
+    }
+    .site-name {
+        position: relative;
+        z-index: 100;
+    }
+    .right-nav{
         display: none;
     }
-    .right-nav ul, li{
-        flex-direction: column-reverse;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 101;
+    }
+    .hamburger .bar, .hamburger::after, .hamburger::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(236, 245, 242, 1);
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+    .hamburger.is-active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+    .hamburger.is-active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 90;
+        background: linear-gradient(20deg, rgb(76, 145, 86), rgb(183, 213, 113));
+        padding-top: 120px;
+        transition: 0.4s; 
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a{
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto 16px;
+        font-weight: 300;
+        font-size: 20px;
+        padding: 12px;
+        border-radius: 29px;
+        background-color: rgb(145, 166, 113);
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -339,7 +404,7 @@ body {
     .img-container img{
         padding: 0;
     }
-    .back-images {
+    .centerimg {
         display: none;
     }
 }
@@ -521,7 +586,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 255px;
+    gap: 235px;
     margin-top: 34px;
 }
 
@@ -575,6 +640,6 @@ body {
 
 @media screen and (max-width: 640px) {
     .foottext {
-        gap: 70px;
+        gap: 50px;
     }
 }
